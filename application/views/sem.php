@@ -101,6 +101,7 @@
 								<th class="text-center" scope="col">Nama</th>
 								<th class="text-center" scope="col">Jenis Kelamin</th>
 								<th class="text-center" scope="col">Check</th>
+								<th class="text-center" scope="col">Tombol</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -109,8 +110,7 @@
 								<td class="text-center">Baruna</td>
 								<td class="text-center">5</td>
 								<td class="text-center"><input type="checkbox"  id="myCheck1" class="ceklis_console" value="Baruna" data-nama="B2" name="checkbox"></td>
-
-									
+								<td class="text-center"><input type="button" id="tombol" name="tombol" value="Submit" class="btn btn-primary" nama-value="Oke" onclick="coba()"></td>
 							</tr>
 							<tr>
 								<td class="font-weight-bold text-center">2</td>
@@ -125,9 +125,9 @@
 			<hr class="bg-secondary">
 			<p id="text" style="display:none">Nama Saya : </p>
 
+		<!-- 	<p id="coba">Coba</p>
 			<div id="show_nama">
-				
-			</div>
+			</div> -->
 </main>
 	
 <!-- Ini Footer -->
@@ -181,7 +181,7 @@
 			<script>
 				function myFunction_prompt() 
 				{
-					alert("Ini prompt");
+					prompt("Ini prompt");
 				}
 			</script>
 
@@ -189,52 +189,53 @@
 			<script>
 				function myFunction_confirm() 
 				{
-					alert("Ini confirm");
+					confirm("Ini confirm");
 				}
 			</script>
 
 			<script>
 				//versi baruna, cara 1 pakai id
-				// $("#myCheck1").click(function () {
-				// 	//menulis sesuatu di console
-				// 	if($("#myCheck1").prop("checked")) {
-				// 		//true
-				// 		console.log("Nama saya Baruna.");
-				// 	}
-				// 	else {
-				// 		//false
-				// 		console.log("");
-				// 	}
-				// });
-				// $("#myCheck2").click(function () {
-				// 	//menulis sesuatu di console
-				// 	if($("#myCheck2").prop("checked")) {
-				// 		//true
-				// 		console.log("Nama saya Ines.");
-				// 	}
-				// 	else {
-				// 		//false
-				// 		console.log("");
-				// 	}
-				// });
-
-				function ceklis_console () {
+				$("#myCheck1").click(function () {
 					//menulis sesuatu di console
-					if($(this).prop("checked")) {
+					if($("#myCheck1").prop("checked")) {
 						//true
-						confirm("Nama saya " + $(this).data("nama") + ".");
-						console.log("Nama saya " + $(this).data("nama") + ".");
+						console.log("Nama saya Baruna.");
 					}
 					else {
 						//false
 						console.log("");
 					}
-				}
+				});
+				$("#myCheck2").click(function () {
+					//menulis sesuatu di console
+					if($("#myCheck2").prop("checked")) {
+						//true
+						console.log("Nama saya Ines.");
+					}
+					else {
+						//false
+						console.log("");
+					}
+				});
+
+				// function ceklis_console () {
+				// 	//menulis sesuatu di console
+				// 	if($(this).prop("checked")) {
+				// 		//true
+				// 		confirm("Nama saya " + $(this).data("nama") + ".");
+				// 		console.log("Nama saya " + $(this).data("nama") + ".");
+				// 	}
+				// 	else {
+				// 		//false
+				// 		console.log("");
+				// 	}
+				// }
 
 				//versi baruna, cara 2 pakai class
-				$(".ceklis_console").click(ceklis_console);
+				// $(".ceklis_console").click(ceklis_console);
 
 			</script>
+
 
 			<script>
 					//versi sem
@@ -256,9 +257,26 @@
 				
 			</script>
 
-			<script>
+			<!-- <script>
 				console.log("ini Nama");
 				document.write("Ines");
+			</script> -->
+
+		<!-- 	<script>
+				var a, b, c;
+				a = 10;
+				b = 10;
+				c = a * b;
+				document.getElementById("coba"). innerHTML = c;
+			</script> -->
+
+			<script>
+				function coba()
+				{
+					var data = alert("ini data");
+					alert(data);
+				}
+
 			</script>
 
 </body>
