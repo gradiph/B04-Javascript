@@ -136,7 +136,7 @@
 				</button> -->
 				
 				<!-- Modal -->
-				<!-- <div class="modal fade" id="contoh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="contoh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -155,7 +155,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 				
 				<!-- Tabel Karyawan -->
 				<div class="container fluid">
@@ -222,7 +222,7 @@
 				</div>
 			</div>
 			<!-- Modal 2 -->
-			<!-- <div class="modal fade" id="contoh2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="contoh2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -244,7 +244,7 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!-- Javascript -->
 			<script src="<?php echo base_url ("assets/vendor/jQuery 3.3.1/jquery.min.js") ?>"></script>
 			<!-- Jquery -->
